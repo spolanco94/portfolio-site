@@ -11,7 +11,7 @@
     
     <body>
         <header id="header">
-            <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light">
+            <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark">
                 <div class="container">
                     <a class="navbar-brand ml-1" href="#">SP</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleContent" aria-controls="toggleContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +21,7 @@
                 <div class="collapse navbar-collapse" id="toggleContent">
                     <ul class="navbar-nav navbar-right ml-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#welcome-section" class="nav-link">About</a>
+                            <a class="nav-link" href="#about" class="nav-link">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#projects" class="nav-link">Projects</a>
@@ -33,7 +33,7 @@
                 </div>
             </nav>
         </header>
-        <div class="jumbotron jumbotron-fluid text-white justify-content-center bg-framing">
+        <div class="jumbotron jumbotron-fluid text-white justify-content-center welcome-bg" id="about">
             <div class="container align-self-center">
                 <div class="row">
                     <div class="col-lg-12 d-flex justify-content-center">
@@ -49,36 +49,46 @@
                 </div>
             </div>
         </div>
-        <div class="container align-self-center">
-                <h2>Projects</h2>
+        <div class="container project-grid">
             <div class="row">
-                <section class="col-xs-12" id="projects">
-                    <div class="row">
-                        <div class="col-4 project-tile">
+                <section class="col-xs-12 text-center text-white" id="projects">
+                    <h2>Projects</h2>
+                    <div class="row justify-content-center m-auto">
+                        <div class="col-lg-4 col-s-6 project-tile">
                             <a href="https://codepen.io/spolanco94/full/BYXzOR/"><img src="https://i.imgur.com/kbosv8h.jpg"></a>
                         </div>
-                        <div class="col-4 project-tile">
+                        <div class="col-lg-4 col-s-6 project-tile">
                             <a href="https://codepen.io/spolanco94/full/BYXzOR/"><img src="https://i.imgur.com/kbosv8h.jpg"></a>
                         </div>
-                        <div class="col-4 project-tile">
+                        <div class="col-lg-4 col-s-6 project-tile">
                             <a href="https://codepen.io/spolanco94/full/BYXzOR/"><img src="https://i.imgur.com/kbosv8h.jpg"></a>
                         </div>
-                        <div class="col-4 project-tile">
+                        <div class="col-lg-4 col-s-6 project-tile">
                             <a href="https://codepen.io/spolanco94/full/BYXzOR/"><img src="https://i.imgur.com/kbosv8h.jpg"></a>
                         </div>
                     </div>
                 </section>
             </div>
-            <section id="contact" class="social-links">
-                <h3>Feel free to checkout my profiles below!</h3>
-                <div class="social" id="fcc">
-                    <a href="https://beta.freecodecamp.org/en/sky_code" target="_blank">FreeCodeCamp Profile</a>
-                </div>
-                <div class="social" id="profile-link">
-                    <a href="https://github.com/spolanco94" target="_blank">Github</a>
-                </div>
-            </section>
         </div>
+        <footer class="footer">
+            <div class="container text-white social-bg">
+                <div class="row">
+                    <div class="d-flex justify-content-center">
+                        <div class="align-self-center text-center p-1">
+                            <section id="contact" class="social-links">
+                                <h3>Feel free to checkout my profiles below!</h3>
+                                <div class="social" id="fcc">
+                                    <a href="https://beta.freecodecamp.org/en/sky_code" target="_blank">FreeCodeCamp Profile</a>
+                                </div>
+                                <div class="social" id="profile-link">
+                                    <a href="https://github.com/spolanco94" target="_blank">Github</a>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
         
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

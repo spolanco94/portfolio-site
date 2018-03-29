@@ -1,8 +1,12 @@
 body {
-    margin: 0;
+    background-image: URL("https://i.imgur.com/efI4lRG.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.bg-framing {
+.welcome-bg {
     min-height: 100vh;
     background-color: #009ec5;
 }
@@ -13,6 +17,10 @@ body {
     box-shadow: 6px 12px 30px -15px rgba(0,0,0,.3), 
                 3px 5px 20px 5px rgba(0,0,0,.22), 
                 0 4px 18px 3px rgba(0,0,0,.12);
+}
+
+.navbar {
+    background-color: #b22924;
 }
 
 .navbar-nav > li > a:hover {
@@ -32,6 +40,7 @@ body {
 
 .project-grid {
     min-height: 100vh;
+    background-color: #13253e;
 }
 
 .project-grid h2 {
@@ -48,6 +57,11 @@ body {
     max-width: 100%;
 }
 
-.social-links {
-    min-height: 20vh;
+footer > .container {
+    max-height: 30vh;
+    background-color: #8b95a0;
+}
+
+.social {
+    display: inline-block;
 }
