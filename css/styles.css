@@ -1,8 +1,9 @@
 html, body {
-    background-color: #1F314B;
-    color: #687589;
-    height: 100vh;
+    min-height: 100%;
     width: 100%;
+    background: linear-gradient(44deg, #34445B, #531E47);
+    /* background-attachment: fixed; */
+    color: #687589;
 }
 .greeting {
     margin: 25px 0px;
@@ -53,38 +54,116 @@ html, body {
 #resume-link a:hover {
     background-color: rgba(151, 110, 142, 0.5);
 }
-.navbar {
-    display: none;
-}
 .panel {
     width: 100%;
     min-height: 75vh;
     display: flex;
     box-sizing: border-box;
-    padding: 20px 10px;
+    padding: 60px 10px 20px;
     text-align: center;
+    margin-top: 20px;
 }
 .landing {
-    /* background-color: #1F314B; */
+    box-sizing: border-box;
     align-items: center;
     height: 100vh;
+    min-height: 100vh;
+    display: flex;
 }
 .title {
     margin-bottom: 40px;
     font-weight: 600;
 }
-
 .skills {
     min-height: 100vh;
 }
-
 .skills-grid {
     width: 50%;
 }
-
 .skills-group {
     background-color: rgba(100, 100, 100, 0.1);
     padding: 20px;   
+}
+.scroll-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.scroll-prompt {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.25rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 0;
+}
+.chevron i {
+    animation: hover 1.5s infinite ease-in-out alternate;
+    color: #f0f0f0;
+}
+@keyframes hover {
+    50% {transform: translate3d(0, 5px, 0);}
+    100% {transform: translate3d(0, 0px, 0);}
+}
+.navbar-spacer {
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+.navbar {
+    display: none;
+    width: 100%;
+    height: 4.5rem;
+    z-index: 99;
+    border-top: 1px solid #34445B;
+    border-bottom: 1px solid #34445B; 
+    background-color: #34445B;
+    box-shadow: 0px 5px 20px #34445B;
+}
+.navbar > .container {
+    width: 100%; 
+    padding: 0;
+    margin-left: 30px;
+}
+.navbar-list {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 0; 
+}
+.navbar-home {
+    font-size: 2.0rem;
+    text-decoration: none;
+    color: #f0f0f0;
+    margin-right: 20px;
+    line-height: 4.5rem;
+}
+.navbar-item {
+    position: relative;
+    float: left;
+    margin-bottom: 0; 
+}
+.navbar-link {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    margin-right: 15px;
+    text-decoration: none;
+    line-height: 4.5rem;
+    color: #687589; 
+}
+.navbar-link.active {
+    color: #33C3F0; 
+}
+.has-docked-nav .navbar {
+    position: fixed;
+    top: 0;
+    left: 0; 
+}
+.has-docked-nav .navbar > .container {
+    width: 80%;
 }
 
 @media screen and (min-width: 1000px) {
@@ -101,6 +180,11 @@ html, body {
     .skills-grid {
         width: 100%;
     }
+    .navbar-spacer {
+        display: block;
+        width: 100%;
+        height: 200px;
+    }
     .navbar {
         display: block;
         width: 100%;
@@ -110,7 +194,8 @@ html, body {
         border-bottom: 1px solid #34445B; 
     }
     .navbar > .container {
-        width: 100%; }
+        width: 100%; 
+    }
     .navbar-list {
         list-style: none;
         margin-bottom: 0; 
@@ -147,5 +232,10 @@ html, body {
     }
     .has-docked-nav .navbar > .container {
         width: 80%;
+    }
+}
+@media screen and (min-height: 670px) {
+    .scroll-box {
+        top: 120px;
     }
 }
