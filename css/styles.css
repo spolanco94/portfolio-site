@@ -5,6 +5,9 @@ html, body {
     /* background-attachment: fixed; */
     color: #687589;
 }
+section {
+    margin-top: 15px;
+}
 .greeting {
     margin: 25px 0px;
     text-align: center;
@@ -55,23 +58,21 @@ html, body {
     background-color: rgba(151, 110, 142, 0.5);
 }
 .panel {
-    width: 100%;
     min-height: 75vh;
     display: flex;
-    box-sizing: border-box;
     padding: 60px 10px 20px;
     text-align: center;
     margin-top: 20px;
+    font-size: 2.0rem;
 }
 .landing {
-    box-sizing: border-box;
     align-items: center;
     height: 100vh;
     min-height: 100vh;
     display: flex;
 }
 .title {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-weight: 600;
 }
 .skills {
@@ -165,6 +166,39 @@ html, body {
 .has-docked-nav .navbar > .container {
     width: 80%;
 }
+.project-title {
+    margin-top: 30px;
+}
+.project-box {
+    margin-top: 30px;
+}
+.project-img {
+    background-color: rgba(100, 100, 100, 0.1);
+    max-width: 100%;
+}
+.details-box {
+    position: relative;
+    /* background: rgba(52, 68, 91, 0.5); */
+    background-color: rgba(100, 100, 100, 0.1);
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); */
+}
+.img-box {
+    position: relative;
+}
+.external-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.repo-link {
+    text-decoration: none;
+    line-height: 2.0rem;
+    padding: 5px;
+    color: #687589; 
+}
+.repo-link > p {
+    padding-top: 20px;
+}
 
 @media screen and (min-width: 1000px) {
     .greeting {
@@ -174,9 +208,13 @@ html, body {
         text-align: left;
     }
     .panel {
-        padding: 20px 10px;
-        margin: 20px 0px;
+        min-height: 75vh;
+        padding: 300px 0;
+        margin: auto;
     }
+    /* .about {
+        padding: 300px 0;
+    } */
     .skills-grid {
         width: 100%;
     }
@@ -232,6 +270,24 @@ html, body {
     }
     .has-docked-nav .navbar > .container {
         width: 80%;
+    }
+    .project-img:hover {
+        color: rgba(0, 0, 0, 0.3);
+    }
+    .details-box, .repo-link {
+        text-align: left;
+        margin-left: 10px;
+        padding: 20px;
+    }
+    .project-img {
+        height: 100%;
+    }
+}
+@media screen and (min-width: 2400px) {
+    .panel {
+        min-height: 75vh;
+        padding: 25vh 0;
+        margin: auto;
     }
 }
 @media screen and (min-height: 670px) {

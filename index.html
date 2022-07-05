@@ -23,13 +23,18 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
 
   <!-- Scripts –––––––––––––––––––––––––––––––––––––––– -->
-  <script src="https://kit.fontawesome.com/085a71e9e2.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/scripts.js" async></script> 
+  <script src="https://kit.fontawesome.com/085a71e9e2.js" crossorigin="anonymous" async></script>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+  crossorigin="anonymous" async></script>
 
 </head>
 <body>
 
   <!-- Primary Page Layout –––––––––––––––––––––––––––––––––––––––– -->
-  <section class="landing" id="landing">
+  <section class="landing u-full-width" id="landing">
     <div class="container">
       <div class="row introduction">
         <div class="six columns greeting">
@@ -61,7 +66,7 @@
       </div>
     </div>
   </section>
-  <section class="navsection">
+  <section class="navsection" >
     <div class="navbar-spacer"></div>
     <nav class="navbar">
       <div class="container">
@@ -75,8 +80,8 @@
       </div>
     </nav>
   </section>
-  <section class="panel about" id="about">
-    <div class="container opaque">
+  <section class="panel about u-full-width" id="about">
+    <div class="container">
       <div class="row">
         <div class="four columns">
           <h1 class="title">About</h1>
@@ -86,8 +91,8 @@
         </div>
     </div>
   </section>
-  <section class="panel skills" id="skills">
-    <div class="container opaque">
+  <section class="panel skills u-full-width" id="skills">
+    <div class="container">
       <div class="row">
         <div class="twelve columns">
           <h1 class="title">Skills</h1>
@@ -171,19 +176,64 @@
       </div>
     </div>
   </section>
-  <section class="panel projects" id="projects">
-    <div class="container opaque">
+  <section class="panel projects u-full-width" id="projects">
+    <div class="container">
       <div class="row">
-        <div class="four columns">
+        <div class="twelve columns">
           <h1 class="title">Projects</h1>
         </div>
-        <div class="eight columns">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="row" id="bugger">
+        <h4 class="project-title">Bugger</h4>
+        <div class="project-box">
+          <div class="one-third column">
+            <img class="project-img" src="images/projects/bugger.jpg" alt="Bugger Homepage">
+          </div>
+          <div class="two-thirds column details-box">
+            <a class="repo-link" href="https://github.com/spolanco94/Bugger" target="_blank">
+              <p>A project management system that gives users the ability to track their projects and teams in a simple, easy to use environment. Build your teams, create tickets to track bugs and features and share files as needed to boost productivity. </p>
+              <div class="external-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </a>
+          </div>
         </div>
+      </div>
+      <div class="row" id="image-file-renamer">
+        <h4 class="project-title">Image File Renamer</h4>
+        <div class="project-box">
+          <div class="one-third column image-box">
+            <a class="live-link" href="https://github.com/spolanco94/File-Renamer/releases/tag/v1.0">
+              <img class="project-img" src="images/projects/file-renamer.jpg" alt="Image file renamer window">
+            </a>
+          </div>
+          <div class="two-thirds column details-box">
+            <a class="repo-link" href="https://github.com/spolanco94/File-Renamer" target="_blank">
+              <p>A file renaming software that allows for batch renaming of image files. This was built to solve a personal issue of needing to rename a large number of files when rendering a 3d animation with the Blender3d software.</p>
+              <div class="external-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="the-cool-blog">
+        <h4 class="project-title">The Cool Blog</h4>
+        <div class="project-box">
+          <div class="one-third column image-box">
+            <a href="https://the-coolest-blog.herokuapp.com/" target="_blank">
+              <img class="project-img" src="images/projects/the-cool-blog.jpg" alt="The Cool Blog Homepage">
+              <div class="external-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </a>
+          </div>
+          <div class="two-thirds column details-box">
+            <a class="repo-link" href="https://github.com/spolanco94/the-cool-blog" target="_blank">
+              <p>A simple blog site that was built using the Django framework, utilizing their default user authentication system.</p>
+              <div class="external-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <section class="panel contact" id="contact">
-    <div class="container opaque">
+  <section class="panel contact u-full-width" id="contact">
+    <div class="container">
       <div class="row">
         <div class="four columns">
           <h1 class="title">Contact</h1>
@@ -194,12 +244,7 @@
     </div>
   </section>
 
-  <!-- Scripts –––––––––––––––––––––––––––––––––––––––– -->
-  <script
-  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-  crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/scripts.js"></script> 
+
 
 <!-- End Document –––––––––––––––––––––––––––––––––––––––– -->
 </body>
