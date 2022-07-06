@@ -202,6 +202,7 @@ section {
 }
 .email-box {
     display: block;
+    font-size: 1.5rem;
     width: 300px;
     margin: 0 auto;
     padding: 20px 0;
@@ -209,13 +210,18 @@ section {
     color: #B79AB0; 
     border-radius: 20px;
 }
+.email-box h5 {
+    margin-bottom: 0;
+}
 textarea {
     resize: none;
 }
 label {
     text-align: left;
 }
-
+.contact {
+    margin-bottom: 100px;
+}
 
 @media screen and (min-width: 1000px) {
     .greeting {
@@ -302,6 +308,9 @@ label {
     .email-box {
         width: 400px;
         color: #B79AB0; 
+    }
+    .contact {
+        margin-bottom: 100px;
     }
 }
 @media screen and (min-width: 2400px) {
