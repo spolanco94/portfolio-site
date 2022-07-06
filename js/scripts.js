@@ -3,11 +3,10 @@ $(document).ready(function() {
       $nav = $('.navbar'),
       $window = $(window),
       $navOffsetTop = $('.navbar-spacer').offset().top,
+      $form = $('#contact-me')
       $document = $(document);
   
   $window.on('scroll', function(){
-    console.log("nav: " + $navOffsetTop);
-    console.log("window: " + $window.scrollTop());
     if($navOffsetTop < $window.scrollTop() && !$body.hasClass('has-docked-nav')){
       $body.addClass('has-docked-nav');
       $nav.css("display", "block");
@@ -17,4 +16,12 @@ $(document).ready(function() {
       $nav.css("display", "none");
     }
   });
+
 });
+
+const form = document.getElementById('contact-me');
+
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('Document Ready');
+});
+

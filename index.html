@@ -25,8 +25,7 @@
   <!-- Scripts –––––––––––––––––––––––––––––––––––––––– -->
   <script type="text/javascript" src="js/scripts.js" async></script> 
   <script src="https://kit.fontawesome.com/085a71e9e2.js" crossorigin="anonymous" async></script>
-  <script
-  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
   integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
   crossorigin="anonymous" async></script>
 
@@ -203,7 +202,9 @@
           <div class="one-third column image-box">
             <a class="live-link" href="https://github.com/spolanco94/File-Renamer/releases/tag/v1.0">
               <img class="project-img" src="images/projects/file-renamer.jpg" alt="Image file renamer window">
+              <div class="external-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
             </a>
+            <p>^ release link ^</p>
           </div>
           <div class="two-thirds column details-box">
             <a class="repo-link" href="https://github.com/spolanco94/File-Renamer" target="_blank">
@@ -221,6 +222,7 @@
               <img class="project-img" src="images/projects/the-cool-blog.jpg" alt="The Cool Blog Homepage">
               <div class="external-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
             </a>
+            <p>^ live link ^</p>
           </div>
           <div class="two-thirds column details-box">
             <a class="repo-link" href="https://github.com/spolanco94/the-cool-blog" target="_blank">
@@ -235,16 +237,43 @@
   <section class="panel contact u-full-width" id="contact">
     <div class="container">
       <div class="row">
-        <div class="four columns">
+        <div class="twelve columns">
           <h1 class="title">Contact</h1>
         </div>
-        <div class="eight columns">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="row">
+        <a class="email-box" href="mailto:spolanco2694@gmail.com">
+          <h5>Send me an e-mail!</h4>
+          <div>
+            <strong>spolanco2694@gmail.com</strong>
+          </div>
+        </a>
+      </div>
+        <br>
+      <h5>or...</h5>
+      <form target="_blank" action="https://formsubmit.co/7cd6a92b378b3ab4d714303ffadf25f3" method="POST" id="contact-me">
+        <div class="six columns">
+          <label for="emailInput">Your Email</label>
+          <input class="u-full-width" type="email" name="email" placeholder="example@email.com*" id="emailInput" required>
         </div>
+        
+        <div class="six columns">
+          <label for="nameInput">Your Name</label>
+          <input class="u-full-width" type="text" name="name" placeholder="Full Name*" id="nameInput" required>
+        </div>
+        <input type="text" name="_honey" style="display:none">
+        
+        <label for="subjectInput">Subject</label>
+        <input class="u-full-width" placeholder="Subject*" name="_subject" id="subjectInput" required>
+        
+        <label for="messageInput">Message</label>
+        <textarea class="u-full-width" placeholder="Your Message" name="message" rows="6" id="messageInput" required></textarea>
+
+        <input class="button-primary u-pull-left" type="submit" name="submit" value="Submit">
+        <input type="hidden" name="_next" value="https://stevenpolanco.com/message_sent.html">
+      </form>
     </div>
   </section>
-
-
 
 <!-- End Document –––––––––––––––––––––––––––––––––––––––– -->
 </body>
