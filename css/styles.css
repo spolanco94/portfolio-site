@@ -227,7 +227,7 @@ label {
     font-size: 1.5rem;
     line-height: 1.5em;
 }
-.success, .contact, .skills, .projects {
+.success {
     align-items: center;
     height: 100vh;
     display: flex;
@@ -322,6 +322,12 @@ label {
     }
     .contact {
         margin-bottom: 100px;
+    }
+    .contact, .skills, .projects {
+        align-items: center;
+        height: 100vh;
+        display: flex;
+        margin-top: 0;
     }
 }
 @media screen and (min-width: 2400px) {
